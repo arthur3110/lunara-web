@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050816">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="Lunara conecta tu sueño, tus hábitos y tu recuperación. Un mejor mañana empieza esta noche.">
+  <title>Lunara — Entendé tu descanso</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/manrope-500.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="/fonts/inter-400.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#producto">Saltar al producto</a>
+<header class="site-header">
+  <a class="brand" href="#inicio" aria-label="Lunara, volver al inicio"><img src="/favicon.svg" width="38" height="38" alt=""><span>Lunara</span></a>
+  <nav class="header-nav" aria-label="Navegación principal">
+    <a href="#producto">Producto</a><a href="#como-funciona">Cómo funciona</a><button class="text-button" data-dialog="about">El proyecto <span aria-hidden="true">↗</span></button>
+  </nav>
+  <div class="header-actions"><button class="button button-small button-outline" data-dialog="demo">Probar demo <span aria-hidden="true">↗</span></button><button class="menu-toggle icon-button" aria-label="Abrir navegación" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button></div>
+</header>
+<nav id="mobile-menu" class="mobile-menu" aria-label="Navegación móvil" hidden><a href="#inicio">Experiencia</a><a href="#producto">Producto</a><a href="#como-funciona">Cómo funciona</a><button data-dialog="about">El proyecto ↗</button></nav>
+<main>
+  <section class="experience" id="inicio" aria-label="La experiencia Lunara">
+    <div class="experience-sticky" data-stage="0">
+      <div class="sky" aria-hidden="true"></div><div class="atmosphere" aria-hidden="true"></div>
+      <div class="experience-topline"><span>SUEÑO · RECUPERACIÓN · HÁBITOS</span><span class="review-badge"><i></i> Una nueva forma de descansar</span></div>
+      <div class="experience-body">
+        <div class="story-copy">
+          <article class="story-slide is-active" data-slide="0">
+            <p class="eyebrow">ENCONTRÁ TU PROPIO RITMO</p>
+            <h1>Entendé cómo<br> dormís, recuperás<br> y <span>vivís.</span></h1>
+            <p class="story-description">Tu descanso cuenta una historia.<br> Lunara te ayuda a conectar las piezas.</p>
+            <div class="hero-actions"><a class="button button-primary" href="#medir">Explorar Lunara <span aria-hidden="true">↗</span></a><a class="inline-link" href="#producto">Ver el producto <span aria-hidden="true">→</span></a></div>
+          </article>
+          <article class="story-slide" data-slide="1" inert aria-hidden="true">
+            <p class="eyebrow">01 / MEDIR</p><h2>Tu noche tiene<br> más de una<br> <span>respuesta.</span></h2>
+            <p class="story-description">Dormir ocho horas no cuenta toda la historia. Mirá tus horarios, la continuidad del sueño y cómo te sentís al despertar.</p><p class="story-footnote">El primer paso es observar.</p>
+          </article>
+          <article class="story-slide" data-slide="2" inert aria-hidden="true">
+            <p class="eyebrow">02 / CONECTAR</p><h2>Tu sueño no<br> ocurre <span>aislado.</span></h2>
+            <p class="story-description">Tus noches y tus días están conectados. Reuní descanso, actividad y hábitos en una misma mirada.</p><p class="story-footnote">El contexto hace la diferencia.</p>
+          </article>
+          <article class="story-slide" data-slide="3" inert aria-hidden="true">
+            <p class="eyebrow">03 / DETECTAR PATRONES</p><h2>Las piezas<br> empiezan a<br> <span>conectar.</span></h2>
+            <p class="story-description">Una noche es un dato. Varias noches te permiten explorar qué hábitos coinciden con un descanso diferente.</p><p class="story-footnote">Menos datos sueltos. Más perspectiva.</p>
+          </article>
+          <article class="story-slide" data-slide="4" inert aria-hidden="true">
+            <p class="eyebrow">04 / INTERPRETAR</p><h2>Entenderlo<br> cambia tu<br> <span>mañana.</span></h2>
+            <p class="story-description">Traducí lo que ves en una idea clara. Sin perder el contexto ni confundir una coincidencia con una causa.</p><p class="story-footnote">Información que tiene sentido para vos.</p>
+          </article>
+          <article class="story-slide" data-slide="5" inert aria-hidden="true">
+            <p class="eyebrow">05 / RECOMENDAR</p><h2>Un pequeño<br> cambio. Un<br> <span>nuevo ritmo.</span></h2>
+            <p class="story-description">Elegí un hábito, probalo y observá cómo te sentís. Tu próxima noche es un buen lugar para empezar.</p><a class="button button-primary" href="#producto">Conocé la experiencia <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+        <div class="story-visual" aria-label="Visualización de la relación entre sueño, recuperación y hábitos">
+          <div class="lunar-system" aria-hidden="true">
+            <div class="orbit orbit-a"><span></span></div><div class="orbit orbit-b"><span></span></div><div class="orbit orbit-c"></div>
+            <div class="moon-wrap"><canvas id="moon" width="600" height="600"></canvas><div class="moon-fallback"></div></div>
+            <span class="star-cross star-one">+</span><span class="star-cross star-two">+</span>
+          </div>
+          <div class="orbit-label label-sleep"><i></i><span>Sueño<small>Duración y continuidad</small></span></div>
+          <div class="orbit-label label-recovery"><i></i><span>Recuperación<small>Cómo te sentís</small></span></div>
+          <div class="orbit-label label-habits"><i></i><span>Hábitos<small>Tu ritmo diario</small></span></div>
+          <div class="data-node node-light">Luz <span>Rutina diaria</span></div><div class="data-node node-activity">Actividad <span>Movimiento</span></div><div class="data-node node-schedule">Horarios <span>Regularidad</span></div>
+          <div class="visual-layer layer-measure" aria-hidden="true"><div class="glass-panel night-card"><p class="panel-kicker">UNA NOCHE, EN PERSPECTIVA <span>DEMO</span></p><p class="big-metric">7<span>h</span> 42<span>m</span></p><div class="mini-wave" aria-hidden="true"></div><div class="split-meta"><span>23:15<small>Te acostaste</small></span><span>07:10<small>Te levantaste</small></span></div></div></div>
+          <div class="visual-layer layer-pattern" aria-hidden="true"><div class="glass-panel pattern-card"><p class="panel-kicker">UN PATRÓN POSIBLE <span>DEMO</span></p><h3>Más regularidad.<br> Otra forma de despertar.</h3><div class="pattern-bars" aria-hidden="true"><i style="--h:35%"></i><i style="--h:58%"></i><i style="--h:42%"></i><i style="--h:70%"></i><i style="--h:66%"></i><i style="--h:86%"></i><i style="--h:82%"></i></div><div class="pattern-days"><span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span></div><p class="panel-note">Horarios de sueño más estables en este ejemplo.</p></div></div>
+          <div class="visual-layer layer-interpret" aria-hidden="true"><div class="glass-panel insight-card"><p class="panel-kicker">DE LOS DATOS A UNA IDEA <span>DEMO</span></p><span class="insight-symbol" aria-hidden="true">✧</span><h3>Quizás tu horario<br> también importe.</h3><p>En este ejemplo, los días con horarios más regulares coinciden con una mejor sensación al despertar.</p><div class="insight-bottom"><span class="tiny-dot"></span>Una relación para explorar, no una conclusión.</div></div></div>
+          <div class="visual-layer layer-recommend" aria-hidden="true"><div class="glass-panel recommendation-card"><p class="panel-kicker">TU PRÓXIMO PASO <span>DEMO</span></p><div class="recommendation-icon" aria-hidden="true">☾</div><h3>Esta noche,<br> empezá por un hábito.</h3><p>Elegí un horario de descanso que puedas sostener y observá cómo te sentís durante la semana.</p><div class="habit-preview"><span class="habit-check" aria-hidden="true">✓</span><span>Mi momento para bajar el ritmo<small>Una intención, cada noche.</small></span></div></div></div>
+          <div class="visual-coordinate" aria-hidden="true"><span>UN UNIVERSO CONECTADO</span><span>01 — 05</span></div>
+        </div>
+      </div>
+      <div class="experience-bottom"><nav class="stage-nav" aria-label="Etapas de la experiencia"><a href="#inicio" aria-current="step"><span>00</span>Inicio</a><a href="#medir"><span>01</span>Medir</a><a href="#conectar"><span>02</span>Conectar</a><a href="#detectar"><span>03</span>Detectar</a><a href="#interpretar"><span>04</span>Interpretar</a><a href="#recomendar"><span>05</span>Actuar</a></nav><button class="next-stage" aria-label="Avanzar a la siguiente etapa"><span>Seguí explorando</span><span aria-hidden="true">↓</span></button></div>
+    </div>
+    <span id="medir" class="stage-anchor" style="--step:1"></span><span id="conectar" class="stage-anchor" style="--step:2"></span><span id="detectar" class="stage-anchor" style="--step:3"></span><span id="interpretar" class="stage-anchor" style="--step:4"></span><span id="recomendar" class="stage-anchor" style="--step:5"></span>
+  </section>
+  <section class="product-section section-shell" id="producto" aria-labelledby="product-title">
+    <div class="section-heading reveal"><div><p class="eyebrow">01 / EL PRODUCTO</p><h2 id="product-title">Tu descanso.<br> <span>Con todas sus piezas.</span></h2></div><p>Una mirada simple a tus noches y a lo que pasa entre ellas. Explorá una muestra de la experiencia.</p></div>
+    <div class="product-layout reveal">
+      <div class="product-sidebar"><div class="product-tabs" role="tablist" aria-label="Explorar el producto" aria-orientation="vertical"><button role="tab" id="tab-sleep" aria-selected="true" aria-controls="product-panel" tabindex="0" data-product="sleep"><span class="tab-index">01</span><span>Tu descanso<small>La noche, en una mirada.</small></span><span class="tab-arrow" aria-hidden="true">↗</span></button><button role="tab" id="tab-patterns" aria-selected="false" aria-controls="product-panel" tabindex="-1" data-product="patterns"><span class="tab-index">02</span><span>Tus patrones<small>Entendé tu propio ritmo.</small></span><span class="tab-arrow" aria-hidden="true">↗</span></button><button role="tab" id="tab-habits" aria-selected="false" aria-controls="product-panel" tabindex="-1" data-product="habits"><span class="tab-index">03</span><span>Tu próximo paso<small>De entender a hacer.</small></span><span class="tab-arrow" aria-hidden="true">↗</span></button></div><p class="demo-disclosure"><span class="tiny-dot"></span>Demostración interactiva.<br> Todos los datos son de ejemplo.</p></div>
+      <div class="dashboard" id="product-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-sleep"><div class="dashboard-top"><span class="dashboard-brand"><img src="/favicon.svg" width="27" height="27" alt="">Lunara <span>/ tu espacio</span></span><span class="sample-badge">DATOS DE EJEMPLO</span></div><div class="dashboard-body" id="dashboard-content"></div></div>
+    </div>
+  </section>
+  <section class="how-section section-shell" id="como-funciona" aria-labelledby="how-title">
+    <div class="section-heading reveal"><div><p class="eyebrow">02 / A TU RITMO</p><h2 id="how-title">Menos ruido.<br> <span>Más claridad.</span></h2></div><p>Observar, conectar y dar un paso posible.<br> Así imaginamos el descanso con Lunara.</p></div>
+    <div class="how-layout reveal"><div class="principles"><p class="principle-lead">No sos un número.<br> Tu contexto importa.</p><p>Lunara es un proyecto en desarrollo para acercarte información comprensible sobre tu descanso, tus hábitos y tu recuperación.</p><button class="inline-link" data-dialog="about">Conocé el proyecto <span aria-hidden="true">↗</span></button><div class="orbit-signature" aria-hidden="true"><img src="/favicon.svg" alt="" width="100" height="100"></div></div><div class="process-list"><details open><summary><span>01</span><h3>Observá tu noche</h3><i aria-hidden="true">+</i></summary><p>Registrá cuándo te acostás, cuándo te levantás y cómo te sentís. La demo te permite explorar este primer paso sin crear una cuenta.</p></details><details><summary><span>02</span><h3>Sumá tu contexto</h3><i aria-hidden="true">+</i></summary><p>Tus horarios y tus hábitos aportan perspectiva. La propuesta de Lunara es reunir esa información para ayudarte a explorar relaciones a lo largo del tiempo.</p></details><details><summary><span>03</span><h3>Elegí un pequeño cambio</h3><i aria-hidden="true">+</i></summary><p>Convertí una observación en una intención concreta. La experiencia de ejemplo te deja marcar hábitos y probar un registro; todavía no realiza análisis clínicos ni se conecta a dispositivos.</p></details></div></div>
+    <div class="closing reveal"><div><p class="eyebrow">UN MEJOR MAÑANA EMPIEZA ESTA NOCHE</p><h2>Hacé espacio<br> para <span>descansar.</span></h2></div><div><button class="button button-primary" data-dialog="demo">Probá la experiencia <span aria-hidden="true">↗</span></button><p>Sin cuenta. A tu ritmo.</p></div></div>
+  </section>
+</main>
+<footer class="site-footer"><a class="brand" href="#inicio"><img src="/favicon.svg" width="30" height="30" alt=""><span>Lunara</span></a><p>Sueño, recuperación y hábitos.</p><div><button data-dialog="privacy">Privacidad de la demo</button><a href="#inicio">Volver arriba ↑</a></div></footer>
+<dialog id="demo-dialog" aria-labelledby="demo-title"><div class="dialog-top"><span class="eyebrow">TU PRIMERA NOCHE · DEMO</span><button class="icon-button dialog-close" aria-label="Cerrar demo">×</button></div><div id="demo-form-view"><h2 id="demo-title">Empezá por<br> <span>escucharte.</span></h2><p class="dialog-intro">Probá un registro de descanso. Se usa únicamente en esta página y se borra al recargar.</p><form id="sleep-form"><div class="time-fields"><label>Me acosté a las<input name="bedtime" type="time" value="23:15" required></label><label>Me levanté a las<input name="wake" type="time" value="07:10" required></label></div><fieldset><legend>¿Cómo te sentiste al despertar?</legend><div class="feeling-options"><label><input type="radio" name="feeling" value="Con poca energía" required><span>Con poca energía</span></label><label><input type="radio" name="feeling" value="Más o menos"><span>Más o menos</span></label><label><input type="radio" name="feeling" value="Con energía"><span>Con energía</span></label></div></fieldset><p id="form-error" class="form-error" role="alert"></p><button class="button button-primary" type="submit">Ver mi registro <span aria-hidden="true">→</span></button></form></div><div id="demo-result" hidden aria-live="polite"></div></dialog>
+<dialog id="about-dialog" aria-labelledby="about-title"><div class="dialog-top"><span class="eyebrow">EL PROYECTO</span><button class="icon-button dialog-close" aria-label="Cerrar">×</button></div><h2 id="about-title">Descanso<br> con <span>contexto.</span></h2><p>Lunara es un proyecto estudiantil de una aplicación que busca conectar sueño, recuperación y hábitos diarios, y convertir esa información en algo fácil de entender.</p><p>Esta web es una versión interactiva para revisar su identidad y experiencia. Las visualizaciones usan datos ficticios; las conexiones con dispositivos y el análisis personalizado son parte de la visión del producto.</p><div class="dialog-note">Hoy podés recorrer la propuesta, explorar el panel y probar un registro. La demo no ofrece diagnósticos ni mediciones reales del sueño.</div><button class="button button-primary" data-switch-demo>Probar el registro <span aria-hidden="true">→</span></button></dialog>
+<dialog id="privacy-dialog" aria-labelledby="privacy-title"><div class="dialog-top"><span class="eyebrow">PRIVACIDAD DE LA DEMO</span><button class="icon-button dialog-close" aria-label="Cerrar">×</button></div><h2 id="privacy-title">Tu prueba<br> <span>queda acá.</span></h2><p>Los horarios y respuestas que ingreses se mantienen temporalmente en la memoria de esta página. No se envían a un servidor y desaparecen al recargarla.</p><p>Esta demo no incorpora analítica, cookies propias ni conexiones con dispositivos. Los gráficos del recorrido son ejemplos ficticios. El acceso al sitio lo gestiona la plataforma de alojamiento.</p></dialog>
+<noscript><div class="noscript-note">Para explorar las etapas y probar el registro, activá JavaScript. Podés seguir leyendo sobre el proyecto y su funcionamiento.</div></noscript>
+</body>
+</html>
